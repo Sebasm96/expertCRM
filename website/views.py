@@ -30,7 +30,7 @@ def log_out(request):
     messages.success(request, "You logged out!")
     return redirect('home')
 
-def register_user(request):
+def registration(request):
     if request.method == 'POST':
         form = SignUp(request.POST)
         if form.is_valid():
